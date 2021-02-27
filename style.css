@@ -24,3 +24,8 @@ label {
 .btn, input[type="text"] {
   width: 100%;
 }
+
+#task_list {
+  border: 2px solid black;
+  padding: 1em;
+}
