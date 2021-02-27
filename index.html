@@ -10,7 +10,8 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="library_storage.js"></script>
-    <script src="library_tasklist"></script>
+    <script src="library_task.js"></script>
+    <script src="library_tasklist.js"></script>
     <script src="list.js"></script>
 </head>
 
@@ -31,13 +32,7 @@
                             <button type="button" id="add_task" class="btn btn-primary">Add Task</button>
                         </div>
                         <div class="col-6">
-                            <button type="button" name="clear_tasks" id="clear_tasks" class="btn btn-primary">Clear Task</button>
-                        </div>
-                        <div class="col-6 mt-2">
-                            <button type="button" name="delete_task" id="delete_task" class="btn btn-primary">Delete Task</button>
-                        </div>
-                        <div class="col-6 mt-2">
-                            <button type="button" name="toggle_sort" id="toggle_sort" class="btn btn-primary">Toggle Sort</button>
+                            <button type="button" name="clear_tasks" id="clear_tasks" class="btn btn-primary">Clear Tasks</button>
                         </div>
                         <div class="col-6 mt-2">
                             <button type="button" name="set_name" id="set_name" class="btn btn-primary">Set Name</button>
@@ -49,7 +44,7 @@
                 </div>
                 <div class="col-6">
                     <label for="task_list" id="name">&nbsp;</label>
-                    <textarea class="form-control" name="task_list" id="task_list" cols="50" rows="6"></textarea>
+                   <div id="task_list"></div>
                 </div>
             </div>
 

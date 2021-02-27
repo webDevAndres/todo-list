@@ -15,6 +15,15 @@ var setStorage = function(key, arr) {
     }
 };
 
+var getSessionStorage = function(key) {
+    var storage = sessionStorage.getItem(key) || "";
+    if(storage === "") {
+        return "";
+    } else {
+        return storage;
+    }
+};
+
 var clearStorage = function(key) {
     localStorage.setItem(key, "");
 };
